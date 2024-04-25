@@ -14,7 +14,7 @@ datasource db {
 }
 
 enum Status {
-  PENDETE
+  PENDENTE
   CONCLUIDA
   ARQUIVADA
 }
@@ -23,7 +23,7 @@ model Tasks {
   id         String   @id @default(uuid())
   name       String
   status     Status
-  startTime?  DateTime
+  startTime  DateTime
   endTime    DateTime
   created_at DateTime @default(now())
 }

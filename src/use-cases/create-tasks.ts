@@ -4,8 +4,8 @@ import { TasksRepository } from "../repositories/tasks-repository";
 interface CreateTaskUseCaseRequest {
     name: string;
     status: Status;
-    startTime: Date;
-    endTime: Date;
+    startTime: string;
+    endTime: string;
 }
 
 type CreateTaskUseCasResponse = Tasks
